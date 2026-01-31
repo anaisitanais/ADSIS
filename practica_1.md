@@ -1,6 +1,6 @@
 ![Image](https://i.blogs.es/82572c/debian-logo/650_1200.jpg)
 # **PRÁCTICA 1 Administración de Sistemas**
-## Autores: Santiago Blasco y Anaïs Aldea
+## Autores: Santiago Blasco y Anaïs Aldea, 28/1/2026
 > 7b7837fa2ed64fd45224bff905643bd3ab32157dcc0ab1dc68aad5b9dc2d4d39  debian-13.3.0-amd64-DVD-1.iso es la imagen ISO que coincide con el disco instalado.
 > 
 **Pregunta: Busca la llamada al sistema que se emplea para ejecutar un script y explica su funcionamiento.**\
