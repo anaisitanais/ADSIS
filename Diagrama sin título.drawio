@@ -187,8 +187,71 @@
         <mxCell id="hUgiuZuaL3acPJO4WL9b-61" parent="1" style="text;whiteSpace=wrap;html=1;" value="PUNTOS_POR_EQUIPO" vertex="1">
           <mxGeometry height="40" width="170" x="244" y="530" as="geometry" />
         </mxCell>
-        <mxCell id="hUgiuZuaL3acPJO4WL9b-62" parent="1" style="text;whiteSpace=wrap;html=1;" value="σ puntosTotales = maxPuntos" vertex="1">
-          <mxGeometry height="40" width="190" x="410" y="460" as="geometry" />
+        <mxCell id="hUgiuZuaL3acPJO4WL9b-62" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 29px;&quot;&gt;σ&lt;/font&gt; puntosTotales = maxPuntos" vertex="1">
+          <mxGeometry height="40" width="190" x="350" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="hUgiuZuaL3acPJO4WL9b-64" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="490" as="sourcePoint" />
+            <mxPoint x="440" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hUgiuZuaL3acPJO4WL9b-65" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 29px;&quot;&gt;π&lt;/font&gt; idEquipo" vertex="1">
+          <mxGeometry height="40" width="90" x="404" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="hUgiuZuaL3acPJO4WL9b-66" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="440" as="sourcePoint" />
+            <mxPoint x="440" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hUgiuZuaL3acPJO4WL9b-68" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 29px;&quot;&gt;π &lt;/font&gt;idEquipoVisitante→idEquipo, idTemporada" vertex="1">
+          <mxGeometry height="40" width="270" x="110" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="hUgiuZuaL3acPJO4WL9b-69" parent="1" style="text;whiteSpace=wrap;html=1;" value="BASE_PRIMERA" vertex="1">
+          <mxGeometry height="40" width="130" x="190" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="hUgiuZuaL3acPJO4WL9b-70" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="240" y="300" as="sourcePoint" />
+            <mxPoint x="240" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hUgiuZuaL3acPJO4WL9b-71" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 29px;&quot;&gt;π&lt;/font&gt; idEquipoLocal→idEquipo, idTemporada" vertex="1">
+          <mxGeometry height="40" width="260" x="390" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="hUgiuZuaL3acPJO4WL9b-72" parent="1" style="text;whiteSpace=wrap;html=1;" value="BASE_PRIMERA" vertex="1">
+          <mxGeometry height="40" width="130" x="471" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="hUgiuZuaL3acPJO4WL9b-73" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="521" y="300" as="sourcePoint" />
+            <mxPoint x="521" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hUgiuZuaL3acPJO4WL9b-74" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 29px;&quot;&gt;∪&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="40" x="361" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="hUgiuZuaL3acPJO4WL9b-75" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="299.5" y="250" as="sourcePoint" />
+            <mxPoint x="367.5" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hUgiuZuaL3acPJO4WL9b-76" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="436" y="250" as="sourcePoint" />
+            <mxPoint x="386" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hUgiuZuaL3acPJO4WL9b-78" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;b&gt;AGRUPAR &lt;/b&gt;contar(DISTINCT idTemporada)→numTemporadas (por idEquipo)" vertex="1">
+          <mxGeometry height="40" width="450" x="173.5" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="hUgiuZuaL3acPJO4WL9b-81" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="373.5" y="200" as="sourcePoint" />
+            <mxPoint x="373.5" y="170" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
