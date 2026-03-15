@@ -1,11 +1,260 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0" version="29.6.1">
   <diagram name="Página-1" id="Gmnu7-VMLjIoftfxqaiP">
-    <mxGraphModel dx="786" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1518" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="mkKk8QYguHdA_0xZ13gF-1" parent="1" style="text;whiteSpace=wrap;html=1;" value="- SEG1(idTemp1, inicio1) := π idTemporada→idTemp1, inicio→inicio1 ( σ denominacionOficial = &#39;Segunda Division&#39; (Temporada) )&#xa;- SEG2(idTemp2, inicio2) :=π idTemporada→idTemp2, inicio→inicio2( σ denominacionOficial = &#39;Segunda Division&#39; (Temporada) )&#xa;- ULTIMAS5(idTemp1, inicio1) :=π idTemp1, inicio1( σ numMayores &amp;lt; 5( AGRUPAR contar(idTemp2)→numMayores( σ inicio2 &amp;gt; inicio1 (SEG1 × SEG2), idTemp1, inicio1 )))&#xa;- GOLES_JORN(idTemp1, inicio1, denominacionNumerica, golesJornada) := AGRUPAR suma(golesLocal + golesVisitante)→golesJornada ( (ULTIMAS5 ⋈ (idTemp1 = idTemporada) Jornada) ⋈ (Jornada.idJornada = Partido.idJornada) Partido, idTemp1, inicio1, denominacionNumerica)&#xa;- RESULTADO(inicio1, denominacionNumerica, golesJornada) :=π inicio1, denominacionNumerica, golesJornada ( σ golesJornada = maxGoles( GOLES_JORN ⋈ AGRUPAR max(golesJornada)→maxGoles&#xa;( GOLES_JORN, idTemp1 )))" vertex="1">
-          <mxGeometry height="230" width="560" x="140" y="30" as="geometry" />
+          <mxGeometry height="170" width="460" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-2" parent="1" style="text;whiteSpace=wrap;html=1;" value="Temporada" vertex="1">
+          <mxGeometry height="40" width="90" x="690" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-3" parent="1" style="text;whiteSpace=wrap;html=1;" value="denominacionOficial = &#39;Segunda Division&#39;" vertex="1">
+          <mxGeometry height="40" width="250" x="680" y="1065" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-4" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 29px;&quot;&gt;σ&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="70" x="660" y="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-7" edge="1" parent="1" source="fHGexXvCYDDDImY6iM9X-4" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="fHGexXvCYDDDImY6iM9X-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="810" y="1150" as="sourcePoint" />
+            <mxPoint x="810" y="1130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-9" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;π &lt;/font&gt;idTemporada→idTemp2, inicio→inicio2" vertex="1">
+          <mxGeometry height="40" width="250" x="630" y="985" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-10" edge="1" parent="1" source="fHGexXvCYDDDImY6iM9X-4" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="1060" />
+            </Array>
+            <mxPoint x="790" y="1155" as="sourcePoint" />
+            <mxPoint x="730" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-14" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="730" y="950" as="sourcePoint" />
+            <mxPoint x="730" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-15" parent="1" style="text;whiteSpace=wrap;html=1;" value="SEG2" vertex="1">
+          <mxGeometry height="40" width="70" x="710" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-16" parent="1" style="text;whiteSpace=wrap;html=1;" value="Temporada" vertex="1">
+          <mxGeometry height="40" width="90" x="420" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-17" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 29px;&quot;&gt;σ&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="70" x="390" y="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-18" edge="1" parent="1" source="fHGexXvCYDDDImY6iM9X-17" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="fHGexXvCYDDDImY6iM9X-17" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="540" y="1150" as="sourcePoint" />
+            <mxPoint x="540" y="1130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-19" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;π &lt;/font&gt;idTemporada→idTemp1, inicio→inicio1" vertex="1">
+          <mxGeometry height="40" width="250" x="360" y="985" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-20" edge="1" parent="1" source="fHGexXvCYDDDImY6iM9X-17" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="1060" />
+            </Array>
+            <mxPoint x="520" y="1155" as="sourcePoint" />
+            <mxPoint x="460" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-21" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="460" y="950" as="sourcePoint" />
+            <mxPoint x="460" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-22" parent="1" style="text;whiteSpace=wrap;html=1;" value="SEG1" vertex="1">
+          <mxGeometry height="40" width="70" x="440" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-23" parent="1" style="text;whiteSpace=wrap;html=1;" value="denominacionOficial = &#39;Segunda Division&#39;" vertex="1">
+          <mxGeometry height="40" width="250" x="410" y="1065" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-24" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 26px;&quot;&gt;×&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="40" x="580" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-25" edge="1" parent="1" source="fHGexXvCYDDDImY6iM9X-24" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" target="fHGexXvCYDDDImY6iM9X-15" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="690" y="910" as="sourcePoint" />
+            <mxPoint x="690" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-26" edge="1" parent="1" source="fHGexXvCYDDDImY6iM9X-24" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" target="fHGexXvCYDDDImY6iM9X-22" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="550" y="910" as="sourcePoint" />
+            <mxPoint x="550" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-27" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 29px;&quot;&gt;σ&lt;/font&gt; inicio2 &amp;gt; inicio1" vertex="1">
+          <mxGeometry height="40" width="130" x="535" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-28" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="fHGexXvCYDDDImY6iM9X-24" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="590" y="890" as="sourcePoint" />
+            <mxPoint x="801" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-31" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="591" y="850" as="sourcePoint" />
+            <mxPoint x="591" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-32" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;span&gt;AGRUPAR contar(idTemp2)→numMayores&lt;/span&gt;&lt;span&gt;&amp;nbsp;(idTemp1, inicio1)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="400" x="431" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-33" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="591" y="780" />
+            </Array>
+            <mxPoint x="591" y="810" as="sourcePoint" />
+            <mxPoint x="591" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-34" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="591" y="760" as="sourcePoint" />
+            <mxPoint x="591" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-41" edge="1" parent="1" source="fHGexXvCYDDDImY6iM9X-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="fHGexXvCYDDDImY6iM9X-32" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-35" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 29px;&quot;&gt;σ&lt;/font&gt;numMayores &amp;lt; 5" vertex="1">
+          <mxGeometry height="40" width="130" x="535" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-36" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 29px;&quot;&gt;π &lt;/font&gt;idTemp1, inicio1" vertex="1">
+          <mxGeometry height="40" width="130" x="541" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-37" parent="1" style="text;whiteSpace=wrap;html=1;" value="Jornada" vertex="1">
+          <mxGeometry height="40" width="80" x="431" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-38" parent="1" style="text;whiteSpace=wrap;html=1;" value="ULTIMAS5" vertex="1">
+          <mxGeometry height="40" width="90" x="555" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-42" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="690" />
+            </Array>
+            <mxPoint x="590" y="720" as="sourcePoint" />
+            <mxPoint x="590" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-44" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 29px;&quot;&gt;⋈&lt;/font&gt;idTemp1 = idTemporada" vertex="1">
+          <mxGeometry height="40" width="180" x="450" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-45" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="495" y="660" />
+            </Array>
+            <mxPoint x="475" y="680" as="sourcePoint" />
+            <mxPoint x="495" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-48" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="555" y="660" />
+            </Array>
+            <mxPoint x="575" y="680" as="sourcePoint" />
+            <mxPoint x="555" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-49" parent="1" style="text;whiteSpace=wrap;html=1;" value="Partido" vertex="1">
+          <mxGeometry height="40" width="70" x="361" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-50" parent="1" style="text;whiteSpace=wrap;html=1;" value="⋈ Jornada.idJornada = Partido.idJornada" vertex="1">
+          <mxGeometry height="40" width="250" x="361" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-51" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="421" y="620" />
+            </Array>
+            <mxPoint x="401" y="640" as="sourcePoint" />
+            <mxPoint x="421" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-52" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="525" y="620" />
+            </Array>
+            <mxPoint x="545" y="640" as="sourcePoint" />
+            <mxPoint x="525" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-54" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;span&gt;AGRUPAR suma(golesLocal + golesVisitante)→golesJornada&lt;/span&gt;&lt;span&gt;( idTemp1, inicio1, denominacionNumerica)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="570" x="200" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-56" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="471" y="610" as="sourcePoint" />
+            <mxPoint x="471" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-57" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="471" y="580" as="sourcePoint" />
+            <mxPoint x="471" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-58" parent="1" style="text;whiteSpace=wrap;html=1;" value="GOLES_JORN" vertex="1">
+          <mxGeometry height="40" width="110" x="431" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-59" parent="1" style="text;whiteSpace=wrap;html=1;" value="GOLES_JORN" vertex="1">
+          <mxGeometry height="40" width="110" x="-10" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-60" parent="1" style="text;whiteSpace=wrap;html=1;" value="AGRUPAR max(golesJornada)→maxGoles (idTemp1)" vertex="1">
+          <mxGeometry height="40" width="340" x="-70" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-61" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="40" y="580" as="sourcePoint" />
+            <mxPoint x="40" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-62" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 29px;&quot;&gt;⋈&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="30" x="280" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-63" edge="1" parent="1" source="fHGexXvCYDDDImY6iM9X-60" style="endArrow=none;html=1;rounded=0;" target="fHGexXvCYDDDImY6iM9X-62" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="170" y="540" as="sourcePoint" />
+            <mxPoint x="170" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-64" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;exitX=0.386;exitY=0.063;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="463.46000000000004" y="547.52" as="sourcePoint" />
+            <mxPoint x="300" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-65" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 29px;&quot;&gt;σ &lt;/font&gt;golesJornada = maxGoles" vertex="1">
+          <mxGeometry height="40" width="180" x="200" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-66" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="460" />
+            </Array>
+            <mxPoint x="290" y="490" as="sourcePoint" />
+            <mxPoint x="290" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fHGexXvCYDDDImY6iM9X-67" parent="1" style="text;whiteSpace=wrap;html=1;" value="π inicio1, denominacionNumerica, golesJornada" vertex="1">
+          <mxGeometry height="40" width="290" x="200" y="380" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
