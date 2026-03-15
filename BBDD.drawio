@@ -1,0 +1,13 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0" version="29.6.1">
+  <diagram name="Página-1" id="Gmnu7-VMLjIoftfxqaiP">
+    <mxGraphModel dx="786" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mkKk8QYguHdA_0xZ13gF-1" parent="1" style="text;whiteSpace=wrap;html=1;" value="- SEG1(idTemp1, inicio1) := π idTemporada→idTemp1, inicio→inicio1 ( σ denominacionOficial = &#39;Segunda Division&#39; (Temporada) )&#xa;- SEG2(idTemp2, inicio2) :=π idTemporada→idTemp2, inicio→inicio2( σ denominacionOficial = &#39;Segunda Division&#39; (Temporada) )&#xa;- ULTIMAS5(idTemp1, inicio1) :=π idTemp1, inicio1( σ numMayores &amp;lt; 5( AGRUPAR contar(idTemp2)→numMayores( σ inicio2 &amp;gt; inicio1 (SEG1 × SEG2), idTemp1, inicio1 )))&#xa;- GOLES_JORN(idTemp1, inicio1, denominacionNumerica, golesJornada) := AGRUPAR suma(golesLocal + golesVisitante)→golesJornada ( (ULTIMAS5 ⋈ (idTemp1 = idTemporada) Jornada) ⋈ (Jornada.idJornada = Partido.idJornada) Partido, idTemp1, inicio1, denominacionNumerica)&#xa;- RESULTADO(inicio1, denominacionNumerica, golesJornada) :=π inicio1, denominacionNumerica, golesJornada ( σ golesJornada = maxGoles( GOLES_JORN ⋈ AGRUPAR max(golesJornada)→maxGoles&#xa;( GOLES_JORN, idTemp1 )))" vertex="1">
+          <mxGeometry height="230" width="560" x="140" y="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
